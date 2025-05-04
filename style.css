@@ -27,7 +27,7 @@ main {
 }
 
 .project,
-.index {
+.about {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,8 +48,8 @@ main {
 }
 
 .project p,
-.index p,
-.index section,
+.about p,
+.about section,
 .socials p {
   flex: 2;
   margin: 0 10px;
@@ -151,12 +151,12 @@ h2 {
   }
 
   .project h2,
-  .index h2 {
+  .about h2 {
     flex: 0 0 auto; /* מניעת מתיחה מיותרת */
   }
 
   .project,
-  .index {
+  .about {
     flex-direction: column; /* הפיכת התצוגה לאנכית */
     align-items: center;
   }
