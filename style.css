@@ -1,0 +1,169 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+@keyframes changeColor {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #493628;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #d6c0b3;
+  padding: 10px 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+main {
+  margin-top: 80px;
+}
+
+.project,
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.socials {
+  display: flex;
+}
+
+.project h2,
+.about h2 {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+}
+
+.project p,
+.about p,
+.about section,
+.socials p {
+  flex: 2;
+  margin: 0 10px;
+  padding: 20px;
+}
+
+.project a,
+.socials a {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #007bff;
+  padding: 20px;
+}
+
+.project a:hover,
+.socials a:hover {
+  color: #0056b3;
+}
+
+nav {
+  display: flex;
+}
+
+a {
+  font-size: 25px;
+  text-align: center;
+  flex: 1;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  flex: 1;
+  padding: 10px 0;
+}
+
+button:hover,
+nav a:hover,
+footer a:hover {
+  background-color: #ab886d;
+  font-size: 30px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #d6c0b3;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+  flex-direction: column;
+  animation-name: changeColor;
+  animation-duration: 5s;
+}
+
+p,
+section {
+  font-size: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: lightpink;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+  font-size: 60px;
+  text-align: center;
+}
+
+h2 {
+  color: lightpink;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+  font-size: 40px;
+  padding: 20px 0;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px; /* הקטנת גודל פונט למסכים קטנים */
+    padding: 5px; /* צמצום padding */
+  }
+
+  .project h2,
+  .about h2 {
+    flex: 0 0 auto; /* מניעת מתיחה מיותרת */
+  }
+
+  .project,
+  .about {
+    flex-direction: column; /* הפיכת התצוגה לאנכית */
+    align-items: center;
+  }
+}
+
+form input,
+form textarea,
+form button {
+  font-size: 20px;
+}
